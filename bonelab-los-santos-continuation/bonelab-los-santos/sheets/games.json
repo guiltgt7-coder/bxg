@@ -1,0 +1,20 @@
+{
+  "sheet": "games",
+  "columns": ["id", "role", "engine", "install_folder", "installed_version"],
+  "rows": [
+    {
+      "id": {"value": "bonelab", "verified": true, "evidence": "User's chosen game"},
+      "role": {"value": "primary", "verified": true, "evidence": "User chose GTA world inside BONELAB"},
+      "engine": {"value": "unity", "verified": true, "evidence": "Melty game_info; local engine version not inspected"},
+      "install_folder": {"value": null, "verified": false, "evidence": "Not accessible in this cloud session"},
+      "installed_version": {"value": null, "verified": false, "evidence": "Requires actual installation inspection"}
+    },
+    {
+      "id": {"value": "gta-v-enhanced", "verified": true, "evidence": "User's chosen game"},
+      "role": {"value": "companion", "verified": true, "evidence": "User requires real GTA neighborhood content"},
+      "engine": {"value": "rage", "verified": true, "evidence": "Melty game_info; local executable not inspected"},
+      "install_folder": {"value": null, "verified": false, "evidence": "Not accessible in this cloud session"},
+      "installed_version": {"value": null, "verified": false, "evidence": "Requires actual installation inspection"}
+    }
+  ]
+}

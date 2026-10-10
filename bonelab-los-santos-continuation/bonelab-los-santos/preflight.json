@@ -1,0 +1,24 @@
+{
+  "structure": "passed",
+  "references": "passed",
+  "buildAllowed": false,
+  "unfinishedCells": [
+    "games.bonelab.install_folder: Not accessible in this cloud session",
+    "games.bonelab.installed_version: Requires actual installation inspection",
+    "games.gta-v-enhanced.install_folder: Not accessible in this cloud session",
+    "games.gta-v-enhanced.installed_version: Requires actual installation inspection",
+    "systems.vr_player.verified_hook: Inspect native player rig and actual generated assemblies",
+    "systems.neighborhood.verified_hook: Verify Enhanced archive reader and exact map/model/texture/collision dependencies",
+    "systems.loose_props.verified_hook: Inspect interactable/grip and rigidbody setup; verify collision in VR",
+    "systems.physical_weapons.verified_hook: Inspect native weapon spawn identifiers and interaction/damage integration",
+    "systems.pedestrians.verified_hook: Inspect owned pedestrian models/rigs/animations and BONELAB character/physics integration",
+    "systems.traffic.verified_hook: Inspect owned car assets, street paths and physical collision integration",
+    "systems.scene_lifecycle.verified_hook: Verify actual scene-load hooks, main-thread Unity access and VR performance"
+  ],
+  "inputSha256": {
+    "MODLOG.md": "774f5ccbd834df5a34c12ca3f269bb65e1509c166462d02fc60cb3bbed88de0f",
+    "README.md": "bc16d129e562fcd31a8a333b109a3d5cc8a2df3788ca8d78d980336cebccbe80",
+    "sheets/games.json": "41bdcaf31728da321749bd34bdc2846bde6c05236ee61dd6aac6f1598fccd719",
+    "sheets/systems.json": "7cb58a0de80ab0249720095fc043aeb845042effacae842370c1799edeb55502"
+  }
+}

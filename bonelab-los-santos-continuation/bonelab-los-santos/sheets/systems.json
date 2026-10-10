@@ -1,0 +1,49 @@
+{
+  "sheet": "systems",
+  "columns": ["id", "game", "behavior", "verified_hook"],
+  "references": {"game": "games.id"},
+  "rows": [
+    {
+      "id": {"value": "vr_player", "verified": true, "evidence": "Confirmed design"},
+      "game": {"value": "bonelab", "verified": true, "evidence": "Confirmed primary game"},
+      "behavior": {"value": "Use native VR headset view, hands, body and locomotion", "verified": true, "evidence": "User requirement; not a runtime test"},
+      "verified_hook": {"value": null, "verified": false, "evidence": "Inspect native player rig and actual generated assemblies"}
+    },
+    {
+      "id": {"value": "neighborhood", "verified": true, "evidence": "Confirmed design"},
+      "game": {"value": "gta-v-enhanced", "verified": true, "evidence": "Required real content source"},
+      "behavior": {"value": "Read a real neighborhood's streets, buildings, textures and collision from installed GTA files in place", "verified": true, "evidence": "User requirement; neighborhood boundaries not yet selected"},
+      "verified_hook": {"value": null, "verified": false, "evidence": "Verify Enhanced archive reader and exact map/model/texture/collision dependencies"}
+    },
+    {
+      "id": {"value": "loose_props", "verified": true, "evidence": "Confirmed design"},
+      "game": {"value": "bonelab", "verified": true, "evidence": "Native interaction owner"},
+      "behavior": {"value": "Loose objects support native grabbing, throwing and physical contact", "verified": true, "evidence": "User requirement; not a runtime test"},
+      "verified_hook": {"value": null, "verified": false, "evidence": "Inspect interactable/grip and rigidbody setup; verify collision in VR"}
+    },
+    {
+      "id": {"value": "physical_weapons", "verified": true, "evidence": "Confirmed design"},
+      "game": {"value": "bonelab", "verified": true, "evidence": "User requested BONELAB weapons"},
+      "behavior": {"value": "Use physical weapons from the player's BONELAB installation", "verified": true, "evidence": "User requirement; not a runtime test"},
+      "verified_hook": {"value": null, "verified": false, "evidence": "Inspect native weapon spawn identifiers and interaction/damage integration"}
+    },
+    {
+      "id": {"value": "pedestrians", "verified": true, "evidence": "Confirmed first-version requirement"},
+      "game": {"value": "gta-v-enhanced", "verified": true, "evidence": "Neighborhood companion source"},
+      "behavior": {"value": "Moving pedestrians make the neighborhood feel alive", "verified": true, "evidence": "User requirement; representation and behavior fidelity not yet verified"},
+      "verified_hook": {"value": null, "verified": false, "evidence": "Inspect owned pedestrian models/rigs/animations and BONELAB character/physics integration"}
+    },
+    {
+      "id": {"value": "traffic", "verified": true, "evidence": "Confirmed first-version requirement"},
+      "game": {"value": "gta-v-enhanced", "verified": true, "evidence": "Neighborhood companion source"},
+      "behavior": {"value": "Moving cars travel through neighborhood streets", "verified": true, "evidence": "User requirement; driving has not been requested"},
+      "verified_hook": {"value": null, "verified": false, "evidence": "Inspect owned car assets, street paths and physical collision integration"}
+    },
+    {
+      "id": {"value": "scene_lifecycle", "verified": true, "evidence": "Required host integration boundary"},
+      "game": {"value": "bonelab", "verified": true, "evidence": "Primary owns scenes and rendering"},
+      "behavior": {"value": "Load the neighborhood into the real host and release resources when leaving it", "verified": true, "evidence": "Implementation requirement derived from requested in-game experience"},
+      "verified_hook": {"value": null, "verified": false, "evidence": "Verify actual scene-load hooks, main-thread Unity access and VR performance"}
+    }
+  ]
+}
